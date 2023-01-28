@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  max-height: 500px;
+  margin-bottom: auto;
+  height: 100%;
+}
+
+.container {
+  border-radius: 10px;
+  width: 150px;
+  box-shadow: -10px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+  object-fit: cover;
+}
+
+.background {
+  width: 150px;
+  height: 150px;
+  background: lightgray;
+}
+
+.skeleton {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+
+  background-repeat: repeat-y;
+  background-size: 50px 500px;
+  background-position: 0 0;
+  animation: ani 0.8s linear infinite;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 150px 0;
+  }
+}
